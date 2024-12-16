@@ -3,12 +3,12 @@ import { useParams } from "react-router";
 
 function Price(props) {
   // Our api key from coinapi.io.
-  const apiKey = "YOUR API KEY";
+  const apiKey = "7E6ACDB8-98C4-47EC-A08A-C60F7377FA62";
   // Grabbing the currency symbol from the URL Params.
   const params = useParams();
   const symbol = params.symbol;
   // Using the other two variables to create our URL.
-  const url = `http://rest-sandbox.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`;
+  const url = `http://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`;
 
   // State to hold the coin data.
   const [coin, setCoin] = useState("null");
